@@ -1,0 +1,356 @@
+---
+---
+
+<section class="hero">
+	<div class="hero-container">
+		<div class="hero-layout">
+			<div class="hero-image-section">
+				<div class="vintage-frame">
+					<div class="frame-top">
+						<span class="frame-label">BKG</span>
+					</div>
+					<div class="frame-content">
+						<img 
+							src="/headshot.jpg" 
+							alt="Brittany Gilbarte" 
+							class="hero-headshot"
+							loading="eager"
+						/>
+					</div>
+					<div class="frame-bottom">
+						<span class="frame-label">Brittany Gilbarte</span>
+					</div>
+				</div>
+			</div>
+			<div class="hero-content-section">
+				<div class="hero-content">
+					<div class="hero-label">Executive Operations Assistant</div>
+					<h1 class="hero-name">Brittany<br />Gilbarte</h1>
+					<p class="hero-tagline">Service-oriented professional specializing in operations support, cross-cultural communication, and behind-the-scenes coordination</p>
+					<div class="hero-contact">
+						<a href="tel:+12523615229" class="contact-link">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+								<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+							</svg>
+							<span>+1 (252) 361-5229</span>
+						</a>
+						<a href="mailto:brittanygilbarte@gmail.com" class="contact-link">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+								<polyline points="22,6 12,13 2,6"></polyline>
+							</svg>
+							<span>brittanygilbarte@gmail.com</span>
+						</a>
+						<a href="/BrittanyGilbartResume26.pdf" class="contact-link" download>
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+								<polyline points="7 10 12 15 17 10"></polyline>
+								<line x1="12" y1="15" x2="12" y2="3"></line>
+							</svg>
+							Download Resume (PDF)
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		position: relative;
+		min-height: auto;
+		display: flex;
+		align-items: center;
+		background: var(--color-bg);
+		padding: var(--spacing-lg) 0;
+	}
+
+	.hero-container {
+		width: 100%;
+		max-width: 1800px;
+		margin: 0 auto;
+		padding: 0 var(--spacing-md);
+	}
+
+	.hero-layout {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacing-lg);
+		align-items: center;
+		min-height: auto;
+	}
+
+	.hero-image-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	.vintage-frame {
+		position: relative;
+		width: 100%;
+		max-width: 350px;
+		aspect-ratio: 3 / 4;
+		background: #e8e3d5;
+		padding: 10px;
+		box-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.1),
+			0 15px 40px rgba(0, 0, 0, 0.15);
+		transform: rotate(-2deg);
+		transition: transform 0.6s ease;
+	}
+
+	.vintage-frame:hover {
+		transform: rotate(0deg) scale(1.02);
+	}
+
+	.frame-top {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 8px 12px;
+		background: #2c2c2c;
+		margin-bottom: 8px;
+	}
+
+	.frame-bottom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 8px 12px;
+		background: #2c2c2c;
+		margin-top: 8px;
+	}
+
+	.frame-label {
+		font-size: 0.75rem;
+		color: #e8e3d5;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		font-family: var(--font-sans);
+	}
+
+	.frame-content {
+		width: 100%;
+		height: 100%;
+		background: #2c2c2c;
+		padding: 8px;
+		overflow: hidden;
+	}
+
+	.hero-headshot {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+		transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.vintage-frame:hover .hero-headshot {
+		transform: scale(1.03);
+	}
+
+	.hero-content-section {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+	.hero-content {
+		max-width: 100%;
+	}
+
+	.hero-label {
+		font-size: 0.7rem;
+		letter-spacing: 0.3em;
+		text-transform: uppercase;
+		color: var(--color-text-light);
+		font-weight: 600;
+		margin-bottom: var(--spacing-sm);
+		opacity: 0.6;
+		font-family: var(--font-sans);
+	}
+
+	.hero-name {
+		font-size: clamp(2.5rem, 8vw, 6rem);
+		font-family: var(--font-display);
+		line-height: 0.9;
+		margin-bottom: var(--spacing-md);
+		color: var(--color-text);
+		font-weight: 700;
+		letter-spacing: -0.04em;
+		text-transform: uppercase;
+	}
+
+	.hero-tagline {
+		font-size: clamp(1rem, 2vw, 1.375rem);
+		line-height: 1.6;
+		color: var(--color-text);
+		margin-bottom: var(--spacing-lg);
+		font-weight: 300;
+		max-width: 500px;
+		opacity: 0.8;
+		font-family: var(--font-display);
+	}
+
+	.hero-contact {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-sm);
+	}
+
+	.contact-link {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--spacing-sm);
+		padding: var(--spacing-sm) 0;
+		color: var(--color-text);
+		font-weight: 400;
+		font-size: 1rem;
+		transition: var(--transition);
+		border-bottom: 2px solid transparent;
+		width: fit-content;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-size: 0.875rem;
+	}
+
+	.contact-link:hover {
+		color: var(--color-primary);
+		border-bottom-color: var(--color-primary);
+	}
+
+	.contact-link svg {
+		flex-shrink: 0;
+		opacity: 0.5;
+		transition: var(--transition);
+	}
+
+	.contact-link:hover svg {
+		opacity: 1;
+	}
+
+	.hero-download-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--spacing-sm);
+		padding: var(--spacing-md) var(--spacing-xl);
+		background: var(--color-primary);
+		color: var(--color-bg);
+		font-weight: 600;
+		font-size: 0.9rem;
+		border-radius: 0;
+		transition: var(--transition);
+		border: 2px solid var(--color-primary);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-family: var(--font-sans);
+		text-decoration: none;
+		position: relative;
+		overflow: hidden;
+		width: fit-content;
+		margin-top: var(--spacing-xs);
+	}
+
+	.hero-download-button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+		transition: left 0.5s ease;
+	}
+
+	.hero-download-button:hover::before {
+		left: 100%;
+	}
+
+	.hero-download-button:hover {
+		transform: translateY(-2px);
+		background: var(--color-primary-dark);
+		border-color: var(--color-primary-dark);
+		box-shadow: 0 8px 24px rgba(45, 80, 22, 0.3);
+	}
+
+	.hero-download-button svg {
+		flex-shrink: 0;
+		transition: var(--transition);
+	}
+
+	.hero-download-button:hover svg {
+		transform: translateY(2px);
+	}
+
+	@media (max-width: 968px) {
+		.hero-layout {
+			grid-template-columns: 1fr;
+			gap: var(--spacing-lg);
+			min-height: auto;
+			padding: var(--spacing-md) 0;
+		}
+
+		.hero-image-section {
+			justify-content: center;
+			padding-right: 0;
+			order: 1;
+		}
+
+		.hero-content-section {
+			padding-left: 0;
+			order: 2;
+		}
+
+		.hero-content {
+			text-align: center;
+			max-width: 100%;
+		}
+
+		.hero-tagline {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.hero-contact {
+			align-items: center;
+		}
+
+		.hero-download-button {
+			width: 100%;
+			max-width: 300px;
+		}
+
+		.vintage-frame {
+			transform: rotate(0deg);
+			max-width: 320px;
+		}
+
+		.vintage-frame:hover {
+			transform: scale(1.02);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			min-height: auto;
+			padding: var(--spacing-md) 0;
+		}
+
+		.hero-container {
+			padding: 0 var(--spacing-sm);
+		}
+
+		.vintage-frame {
+			max-width: 250px;
+		}
+
+		.hero-name {
+			font-size: clamp(2rem, 10vw, 4rem);
+		}
+	}
+</style>

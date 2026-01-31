@@ -1,0 +1,201 @@
+---
+---
+
+<section class="section education-section">
+	<div class="container">
+		<h2 class="section-title">Education & Certifications</h2>
+		<div class="education-grid">
+			<div class="education-card">
+				<div class="education-header">
+					<div class="education-icon">
+						<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+							<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+						</svg>
+					</div>
+					<div>
+						<p class="education-period">2021 – 2024</p>
+						<p class="education-honors">Valedictorian, Summa Cum Laude</p>
+					</div>
+				</div>
+				<h3>Bachelor of Arts in Intercultural Ministry Studies</h3>
+				<p class="education-institution">Bethany Global University</p>
+				<p class="education-description">Emphasized cross-cultural communication, international coordination, and administrative support in diverse settings</p>
+			</div>
+
+			<div class="education-card">
+				<div class="education-header">
+					<div class="education-icon">
+						<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+							<path d="M2 17l10 5 10-5"></path>
+							<path d="M2 12l10 5 10-5"></path>
+						</svg>
+					</div>
+					<div>
+						<p class="education-period">Completed 2018</p>
+					</div>
+				</div>
+				<h3>Teaching English as a Foreign Language (TEFL) Certification</h3>
+				<p class="education-institution">Bridge Education Group</p>
+				<p class="education-description">Certified in communication and teaching methodologies, enhancing cross-cultural communication skills</p>
+			</div>
+
+			<div class="education-card">
+				<div class="education-header">
+					<div class="education-icon">
+						<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+							<circle cx="9" cy="7" r="4"></circle>
+							<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+							<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+						</svg>
+					</div>
+					<div>
+						<p class="education-period">Completed 2020</p>
+					</div>
+				</div>
+				<h3>Working with Children at Risk Training</h3>
+				<p class="education-institution">YWAM Netherlands</p>
+				<p class="education-description">Specialized training in supporting vulnerable populations and managing sensitive situations with discretion</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.education-section {
+		background: var(--color-bg);
+		padding: var(--spacing-lg) 0;
+	}
+
+	.section-title {
+		text-align: left;
+		margin-bottom: var(--spacing-lg);
+		font-size: clamp(2.5rem, 6vw, 4.5rem);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--color-text);
+		opacity: 0.9;
+		font-family: var(--font-display);
+	}
+
+	.education-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: var(--spacing-lg);
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+	.education-card {
+		background: var(--color-bg-alt);
+		border-radius: 0;
+		padding: var(--spacing-lg);
+		text-align: left;
+		transition: var(--transition);
+		border: 2px solid var(--color-border);
+		box-shadow: none;
+		position: relative;
+		border-top: 10px solid #e8e3d5;
+		padding-top: calc(var(--spacing-lg) + 10px);
+	}
+
+	.education-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 10px;
+		background: #2c2c2c;
+	}
+
+	.education-card:hover {
+		border-color: var(--color-primary);
+		transform: translateY(-6px);
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+	}
+
+	.education-header {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--spacing-sm);
+		margin-bottom: var(--spacing-md);
+	}
+
+	.education-icon {
+		width: 50px;
+		height: 50px;
+		background: var(--color-primary);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		flex-shrink: 0;
+	}
+
+	.education-period {
+		color: var(--color-text-light);
+		font-size: 0.875rem;
+		margin-bottom: var(--spacing-xs);
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-family: var(--font-sans);
+	}
+
+	.education-honors {
+		font-weight: 600;
+		color: var(--color-secondary);
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-family: var(--font-sans);
+	}
+
+	.education-card h3 {
+		font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+		margin-bottom: var(--spacing-xs);
+		color: var(--color-text);
+		font-weight: 600;
+		line-height: 1.3;
+		text-transform: uppercase;
+		letter-spacing: 0.02em;
+		font-family: var(--font-display);
+	}
+
+	.education-institution {
+		font-weight: 400;
+		color: var(--color-text);
+		margin-bottom: var(--spacing-sm);
+		font-size: 1rem;
+		opacity: 0.7;
+		font-family: var(--font-sans);
+	}
+
+	.education-description {
+		color: var(--color-text);
+		line-height: 1.8;
+		font-size: 1rem;
+		font-weight: 300;
+		opacity: 0.85;
+	}
+
+	@media (max-width: 768px) {
+		.education-section {
+			padding: var(--spacing-md) 0;
+		}
+
+		.education-grid {
+			grid-template-columns: 1fr;
+			gap: var(--spacing-md);
+		}
+
+		.section-title {
+			font-size: clamp(1.75rem, 6vw, 3.5rem);
+		}
+	}
+</style>

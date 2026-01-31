@@ -1,0 +1,125 @@
+---
+const skills = [
+	{ name: 'Calendar & Scheduling Management', icon: '📅' },
+	{ name: 'Cross-Cultural Communication', icon: '🌍' },
+	{ name: 'Documentation & Organization', icon: '📋' },
+	{ name: 'Email & Communication Management', icon: '✉️' },
+	{ name: 'Time Zone Coordination', icon: '🕐' },
+	{ name: 'Detail-Oriented Administrative Support', icon: '✅' },
+	{ name: 'Event & Program Coordination', icon: '🎯' },
+	{ name: 'Team Collaboration', icon: '👥' },
+];
+---
+
+<section class="section skills-section">
+	<div class="container">
+		<h2 class="section-title">Key Skills</h2>
+		<div class="skills-grid">
+			{skills.map((skill) => (
+				<div class="skill-item">
+					<span class="skill-icon">{skill.icon}</span>
+					<span class="skill-name">{skill.name}</span>
+				</div>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	.skills-section {
+		background: var(--color-bg);
+		padding: var(--spacing-lg) 0;
+	}
+
+	.section-title {
+		text-align: left;
+		margin-bottom: var(--spacing-lg);
+		font-size: clamp(2.5rem, 6vw, 4.5rem);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--color-text);
+		opacity: 0.9;
+		font-family: var(--font-display);
+	}
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--spacing-md);
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+	.skill-item {
+		background: var(--color-bg-alt);
+		border-radius: 0;
+		padding: var(--spacing-md) var(--spacing-lg);
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-sm);
+		transition: var(--transition);
+		border: 2px solid var(--color-border);
+		position: relative;
+		overflow: hidden;
+		min-height: 60px;
+	}
+
+	.skill-item::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+		transition: left 0.5s ease;
+	}
+
+	.skill-item:hover {
+		border-color: var(--moss-green);
+		transform: translateY(-4px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+	}
+
+	.skill-item:hover::after {
+		left: 100%;
+	}
+
+	.skill-icon {
+		font-size: 1.5rem;
+		flex-shrink: 0;
+		position: relative;
+		z-index: 1;
+	}
+
+	.skill-name {
+		font-weight: 400;
+		color: var(--color-text);
+		font-size: 0.95rem;
+		position: relative;
+		z-index: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-family: var(--font-sans);
+	}
+
+
+	@media (max-width: 768px) {
+		.skills-section {
+			padding: var(--spacing-md) 0;
+		}
+
+		.skills-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.skill-item {
+			padding: var(--spacing-sm);
+		}
+
+		.section-title {
+			font-size: clamp(1.75rem, 6vw, 3.5rem);
+		}
+	}
+</style>

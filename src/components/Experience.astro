@@ -1,0 +1,204 @@
+---
+---
+
+<section class="section experience-section">
+	<div class="container">
+		<h2 class="section-title">Experience</h2>
+		<div class="experience-timeline">
+			<article class="experience-item">
+				<div class="experience-date">2023-2024</div>
+				<div class="experience-content">
+					<div class="experience-header">
+						<h3>Global Internship Assistant</h3>
+						<span class="company">Bethany Global University</span>
+					</div>
+					<ul class="experience-duties">
+						<li>Managed scheduling and coordinated meetings across multiple time zones, ensuring efficient communication between students, staff, and program leaders</li>
+						<li>Organized and maintained detailed documentation systems, creating comprehensive country profiles and tracking internship placements</li>
+						<li>Supported operations by creating course materials, surveys, and managing administrative tasks for international internship programs</li>
+						<li>Coordinated re-entry programming and follow-up communications for returning students</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="experience-item">
+				<div class="experience-date">2022-2023</div>
+				<div class="experience-content">
+					<div class="experience-header">
+						<h3>Intercultural Intern Leader (Bulgaria)</h3>
+						<span class="company">Bethany Global University</span>
+					</div>
+					<ul class="experience-duties">
+						<li>Managed and mentored short-term interns, providing cross-cultural support and coordinating local engagement activities</li>
+						<li>Organized and led weekly meetings, activities, and leadership development programs with meticulous attention to scheduling and logistics</li>
+						<li>Provided professional translation services (Bulgarian-English) to facilitate clear communication across cultural boundaries</li>
+						<li>Coordinated nationwide travel and collaboration, demonstrating flexibility and adaptability in international settings</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="experience-item">
+				<div class="experience-date">2022</div>
+				<div class="experience-content">
+					<div class="experience-header">
+						<h3>Teacher's Assistant / Student Resource Center Staff</h3>
+						<span class="company">Bethany Global University</span>
+					</div>
+					<ul class="experience-duties">
+						<li>Maintained organized systems for grading assignments and providing constructive feedback with attention to detail</li>
+						<li>Managed student resources and connected students with academic support services, demonstrating proactive support</li>
+						<li>Coordinated study materials and guided students in accessing appropriate resources</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="experience-item">
+				<div class="experience-date">2019</div>
+				<div class="experience-content">
+					<div class="experience-header">
+						<h3>Carolina Pregnancy Center Intern</h3>
+						<span class="company">Carolina Pregnancy Center</span>
+					</div>
+					<ul class="experience-duties">
+						<li>Managed registration processes and coordinated with participants, volunteers, and donors</li>
+						<li>Organized and prepared class materials, ensuring smooth operations during sessions</li>
+						<li>Supported event logistics and fostered welcoming environments for participants</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>
+
+<style>
+	.experience-section {
+		background: var(--color-bg);
+		padding: var(--spacing-lg) 0;
+	}
+
+	.section-title {
+		text-align: left;
+		margin-bottom: var(--spacing-lg);
+		font-size: clamp(2.5rem, 6vw, 4.5rem);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--color-text);
+		opacity: 0.9;
+		font-family: var(--font-display);
+	}
+
+	.experience-timeline {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-lg);
+	}
+
+	.experience-item {
+		display: grid;
+		grid-template-columns: 120px 1fr;
+		gap: var(--spacing-lg);
+		padding: 0;
+		background: transparent;
+		border: none;
+		transition: var(--transition);
+	}
+
+	.experience-date {
+		font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+		font-weight: 700;
+		color: var(--color-primary);
+		line-height: 1;
+		text-align: right;
+		padding-top: var(--spacing-xs);
+		opacity: 0.8;
+		font-family: var(--font-display);
+	}
+
+	.experience-content {
+		border-left: 3px solid var(--color-border);
+		padding-left: var(--spacing-lg);
+	}
+
+	.experience-header {
+		margin-bottom: var(--spacing-sm);
+	}
+
+	.experience-header h3 {
+		font-size: clamp(1.25rem, 3vw, 1.75rem);
+		margin-bottom: var(--spacing-xs);
+		color: var(--color-text);
+		font-weight: 600;
+		line-height: 1.2;
+		text-transform: uppercase;
+		letter-spacing: 0.02em;
+		font-family: var(--font-display);
+	}
+
+	.company {
+		font-weight: 400;
+		color: var(--color-text-light);
+		font-size: 1.125rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.875rem;
+		font-family: var(--font-sans);
+	}
+
+	.experience-duties {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.experience-duties li {
+		position: relative;
+		padding-left: var(--spacing-md);
+		margin-bottom: var(--spacing-xs);
+		line-height: 1.7;
+		color: var(--color-text);
+		font-weight: 300;
+		font-size: 1rem;
+		opacity: 0.85;
+	}
+
+	.experience-duties li::before {
+		content: '•';
+		position: absolute;
+		left: 0;
+		color: var(--color-primary);
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 1;
+	}
+
+	@media (max-width: 968px) {
+		.experience-item {
+			grid-template-columns: 1fr;
+			gap: var(--spacing-md);
+		}
+
+		.experience-date {
+			text-align: left;
+			font-size: 1.5rem;
+		}
+
+		.experience-content {
+			border-left: none;
+			border-top: 3px solid var(--color-border);
+			padding-left: 0;
+			padding-top: var(--spacing-md);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.experience-section {
+			padding: var(--spacing-md) 0;
+		}
+
+		.section-title {
+			font-size: clamp(1.75rem, 6vw, 3.5rem);
+		}
+	}
+</style>
