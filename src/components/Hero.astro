@@ -62,7 +62,7 @@
 		min-height: auto;
 		display: flex;
 		align-items: center;
-		background: var(--color-bg);
+		background: linear-gradient(135deg, var(--color-bg) 0%, rgba(135, 169, 107, 0.08) 50%, var(--color-bg) 100%);
 		padding: var(--spacing-lg) 0;
 	}
 
@@ -157,10 +157,12 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+		justify-content: center;
 	}
 
 	.hero-content {
 		max-width: 100%;
+		width: 100%;
 	}
 
 	.hero-label {
@@ -216,6 +218,7 @@
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 		font-size: 0.875rem;
+		text-decoration: none;
 	}
 
 	.contact-link:hover {
@@ -233,58 +236,28 @@
 		opacity: 1;
 	}
 
-	.hero-download-button {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		gap: var(--spacing-sm);
-		padding: var(--spacing-md) var(--spacing-xl);
-		background: var(--color-primary);
-		color: var(--color-bg);
-		font-weight: 600;
-		font-size: 0.9rem;
-		border-radius: 0;
-		transition: var(--transition);
-		border: 2px solid var(--color-primary);
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		font-family: var(--font-sans);
-		text-decoration: none;
-		position: relative;
-		overflow: hidden;
-		width: fit-content;
-		margin-top: var(--spacing-xs);
-	}
+	@media (max-width: 1200px) {
+		.hero-content {
+			text-align: center;
+		}
 
-	.hero-download-button::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: -100%;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-		transition: left 0.5s ease;
-	}
+		.hero-label {
+			text-align: center;
+		}
 
-	.hero-download-button:hover::before {
-		left: 100%;
-	}
+		.hero-name {
+			text-align: center;
+		}
 
-	.hero-download-button:hover {
-		transform: translateY(-2px);
-		background: var(--color-primary-dark);
-		border-color: var(--color-primary-dark);
-		box-shadow: 0 8px 24px rgba(45, 80, 22, 0.3);
-	}
+		.hero-tagline {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
 
-	.hero-download-button svg {
-		flex-shrink: 0;
-		transition: var(--transition);
-	}
-
-	.hero-download-button:hover svg {
-		transform: translateY(2px);
+		.hero-contact {
+			align-items: center;
+		}
 	}
 
 	@media (max-width: 968px) {
@@ -311,18 +284,22 @@
 			max-width: 100%;
 		}
 
+		.hero-label {
+			text-align: center;
+		}
+
+		.hero-name {
+			text-align: center;
+		}
+
 		.hero-tagline {
 			margin-left: auto;
 			margin-right: auto;
+			text-align: center;
 		}
 
 		.hero-contact {
 			align-items: center;
-		}
-
-		.hero-download-button {
-			width: 100%;
-			max-width: 300px;
 		}
 
 		.vintage-frame {
@@ -351,6 +328,25 @@
 
 		.hero-name {
 			font-size: clamp(2rem, 10vw, 4rem);
+			text-align: center;
+		}
+
+		.hero-label {
+			text-align: center;
+		}
+
+		.hero-tagline {
+			text-align: center;
+		}
+
+		.hero-contact {
+			width: 100%;
+			align-items: center;
+		}
+
+		.contact-link {
+			width: 100%;
+			justify-content: center;
 		}
 	}
 </style>
