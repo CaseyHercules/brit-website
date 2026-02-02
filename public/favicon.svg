@@ -1,15 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet">
   <!-- Background with forest green -->
-  <rect width="128" height="128" rx="24" fill="#2d5016"/>
+  <rect width="128" height="128" rx="20" fill="#2d5016"/>
   
-  <!-- Stylized "B" monogram - bold and clear -->
-  <path d="M 42 32 L 42 96 L 68 96 L 68 80 L 56 80 L 56 64 L 66 64 L 66 48 L 56 48 L 56 32 Z" 
-        fill="#faf8f3"/>
+  <!-- B letter from your reference, properly centered and scaled -->
+  <g transform="translate(20, 20) scale(2.44)">
+    <path fill="#faf8f3" d="M10.498 9.249c0-1.488 1.023-2.325 2.449-2.325H18.9c3.224 0 5.83 2.17 5.83 5.457c0 2.17-.9 3.628-2.885 4.558v.062c2.637.372 4.713 2.573 4.713 5.271c0 4.372-2.914 6.729-7.193 6.729h-6.386c-1.427 0-2.481-.899-2.481-2.356V9.249zm4.651 6.418h2.419c1.519 0 2.511-.899 2.511-2.45c0-1.457-1.147-2.201-2.511-2.201h-2.419v4.651zm0 9.24h3.659c1.674 0 2.915-.961 2.915-2.697c0-1.458-1.117-2.45-3.287-2.45h-3.287v5.147z"></path>
+  </g>
   
-  <!-- Inner curve of B -->
-  <path d="M 56 48 L 66 48 L 66 64 L 56 64 Z" 
-        fill="#2d5016"/>
-  
-  <!-- Accent dot for elegance -->
-  <circle cx="80" cy="40" r="4" fill="#87a96b"/>
+  <!-- Sage green period at baseline, aligned with bottom of B -->
+  <circle cx="88" cy="90" r="4" fill="#87a96b"/>
 </svg>
